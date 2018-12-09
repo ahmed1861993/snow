@@ -1,0 +1,501 @@
+
+
+
+
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     -o-box-sizing: border-box;
+     -ms-box-sizing: border-box;
+    
+}
+
+body{
+    font-family: sans-serif;
+}
+
+p{
+    font-family: raleway;
+}
+/*****************  Header section *************/
+
+
+
+section.header{
+    width: 100%;
+    height: 600px;
+    background-image: url(../image/cover.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container{
+    width:1000px;
+    margin: auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+
+section.header img{
+    padding-left: 50px;
+    padding-top: 10px;
+    float: left;
+}
+
+section.header .head nav{
+    float: right;
+}
+
+section.header .head nav ul{
+    list-style: none;
+}
+
+section.header .head nav ul li{
+    display: inline-block;
+    padding: 20px 10px 0 0;
+}
+
+section.header .head nav ul li a{
+    text-decoration: none;
+    padding: 20px 10px;
+    color:#fff;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+section.header .header-content{
+    width:650px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+section.header .header-content h1{
+    font-size: 50px;
+}
+
+
+section.header .header-content p{
+    font-size: 20px;
+    line-height: 1.4;
+    text-shadow: 10px 10px 8px #000;
+}
+
+
+section.header .header-content button{
+    padding: 25px 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: 0;
+    border:0;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+
+section.header .header-content button:first-child{
+    background: #fff;
+    color:#000;
+}
+
+section.header .header-content button:last-child{
+    background: #8be2e5;
+    color:#fff;
+}
+
+section.header .header-content button:last-child:hover{
+     background: #7ddfe2;
+}
+
+section.header .header-footer{
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    bottom: 12%;
+    left: 48%;
+    border:solid 2px #fff;
+    border-radius: 30%;
+    outline: 0;
+}
+
+section.header .header-footer .scroll{
+    width: 5px;
+    height: 10px;
+    background: #fff;
+    margin: auto;
+    position: relative;
+    top:4px;
+    animation: scrolling 1s ease-in-out infinite;
+}
+
+@keyframes scrolling{
+    0{
+        opacity: 0;
+        top: 5px;
+    }
+    
+      10%{
+        opacity: 1;
+        top: 10px;
+    }
+    
+      25%{
+        opacity: 0;
+        top: 25px;
+    }
+}
+
+/*****************  Be First section *************/
+
+
+
+section.befirst{
+    height: 600px;
+    padding-top: 10%;
+    background-image: url(../image/be-the-first-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+section.befirst .befirst-content h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+section.befirst .befirst-content p{
+    color: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 4%;
+    margin-bottom: 50px;
+}
+
+section.befirst .befirst-image{
+    text-align: center;
+}
+
+section.befirst .befirst-image img{
+    width:400px;
+}
+
+
+/*****************  Features section *************/
+
+section.feature{
+    padding-bottom: 20%;
+   
+}
+
+
+section.feature .part{
+     width:30%;
+    float: left;
+    margin-left: 5%;
+}
+
+section.feature .part:nth-child(1){
+    margin-left: 0;
+}
+
+section.feature .part:nth-child(1) hr{
+    height: 5px;
+    background: #6d3f96;
+    border:0;
+}
+
+section.feature .part:nth-child(2) hr{
+    height: 5px;
+    background: #70cbcc;
+    border:0;
+}
+
+section.feature .part:nth-child(3) hr{
+    height: 5px;
+    background: #fdc05d;
+    border:0;
+}
+
+section.feature .part h2{
+    font-size: 22px;
+    text-align: center;
+    margin-top:5%;
+    margin-bottom: 4%;
+}
+
+section.feature .part p{
+     font-size: 15px;
+    text-align: center;
+    color: #999;
+    line-height: 1.3;
+}
+
+
+/*****************  Pricing section *************/
+
+section.pricing{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background: #70cbce;
+    height: auto;
+    text-align: center;
+}
+
+section.pricing h2{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+section.pricing p{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 3%;
+}
+
+section.pricing .pricing-flex{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+   
+}
+
+section.pricing .pricing-flex .flex-item{
+    width:33%;
+   
+    
+}
+
+section.pricing .pricing-flex .flex-item:nth-of-type(1),
+section.pricing .pricing-flex .flex-item:nth-of-type(3){
+    margin-top: 2%;
+}
+
+
+
+section.pricing .pricing-flex .flex-item ul{
+    list-style: none;
+    background: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition:all 0.6s ease-in-out;
+   
+    
+}
+
+section.pricing .pricing-flex .flex-item ul:hover{
+    margin-top: -10%;
+    
+}
+section.pricing .pricing-flex .flex-item ul:hover li.dollar{
+    background: #444;
+}
+
+section.pricing .pricing-flex .flex-item ul li.price{
+    background: #231f20;
+    padding: 20px;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+
+section.pricing .pricing-flex .flex-item ul li.dollar{
+     background: #231f20;
+     padding: 15px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+     transition:all 0.5s ease-in-out;
+   
+}
+
+
+
+
+section.pricing .pricing-flex .flex-item ul li.dollar small{
+    font-weight: normal;
+    color: #929496; 
+}
+
+
+section.pricing .pricing-flex .flex-item ul li.list{
+    padding: 20px;
+    border-bottom: dotted 1px #eee;
+    font-weight: bold;
+}
+
+
+section.pricing .pricing-flex .flex-item ul li.content{
+    color: #929496; 
+    padding: 15px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+section.pricing .pricing-flex .flex-item ul li.btn{
+    color: #70cbcc;
+    padding: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section.pricing .pricing-flex .flex-item ul li.btn:hover{
+    background: #f5f5f5;
+}
+
+
+/*****************  Invite section *************/
+
+section.invite{
+    text-align: center;
+    height: auto;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    background: #f5f5f5;
+}
+
+section.invite i{
+    color: #70cbce;
+   
+    border: 2px solid #70cbce;
+    border-radius: 40px;
+    outline: 0;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+section.invite h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section.invite p{
+    font-size: 20px;
+     margin-bottom: 30px;
+    color: #444;
+}
+
+section.invite input{
+ display: block;
+    margin: auto;
+    width: 380px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section.invite input::-webkit-input-placeholder{
+    color: #aaa;
+}
+
+section.invite button{
+     padding: 20px 25px;
+    margin-right: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: 0;
+    border:0;
+    border-radius: 12px;
+    font-weight: bold;
+    background: #70cbce;
+    color: #fff;
+    
+}
+
+
+/*****************  Info section *************/
+
+section.info{
+    padding: 6%;
+}
+
+section.info .information{
+    width:70%;
+    margin: auto;
+}
+
+section.info .information .info-img{
+    width:20%;
+    float: left;
+    margin-right: 20px;
+}
+
+section.info .information .info-desc{
+     width:75%;
+     float: left;
+}
+section.info .information .info-desc p{
+    font-size: 17px;
+}
+
+section.info .information .info-desc span{
+    font-size: 15px;
+    color:#444;
+}
+section.info hr{
+    height: 2px;
+    border: 0;
+    background: #ccc;
+}
+
+/*****************  footer section *************/
+
+footer{
+    padding: 10% 10%;
+}
+
+footer div.left{
+    float: left;
+    margin-top: 5%;
+}
+
+
+footer div.left span{
+    padding-right: 10px;
+}
+
+footer div.left i:nth-of-type(1):hover{
+    color: #34f;
+}
+
+footer div.left i:nth-of-type(2):hover{
+     color: #15f;
+}
+
+footer div.left i:nth-of-type(3):hover{
+     color: #f58;
+}
+
+
+footer div.right{
+     float: right;
+      margin-top: 5%;
+    color: #aaa;
+}
+
+footer div.right span{
+    font-weight: bold;
+}
